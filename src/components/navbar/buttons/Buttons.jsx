@@ -10,12 +10,13 @@ const Buttons = ({ navBtns }) => {
     if (isActive) {
       className = 'active text-[#ffc515]'
     } else {
-      className = 'inactive'
+      className = 'inactive text-white'
     }
 
     return (
-      className +
-      ' font-bold text-white text-xl hover:text-[#ffc515] transition-all duration-500'
+      className 
+      +
+      ' font-bold text-xl hover:text-[#ffc515] transition-all duration-500'
     )
   }
 
