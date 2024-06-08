@@ -23,6 +23,7 @@ const Buttons = ({ navBtns }) => {
     let style = `bg-white absolute top-full left-0 right-0 overflow-hidden ${
       navBtns ? 'max-h-96' : 'max-h-0'
     } transition-all duration-500`
+    style = style + ` md:static md:max-h-96 md:flex md:m-auto`
     setOpenNavBtns(style)
     return style
   }
@@ -32,17 +33,22 @@ const Buttons = ({ navBtns }) => {
   }, [navBtns])
 
   return (
-    <ul className={openNavBtns}>
-      {navbarBtns.map(btn => {
-        return (
-          <li key={btn.name} className='border-b-2 py-3 pl-7 bg-slate-500'>
-            <NavLink to={btn.path} className={handleActiveLink}>
-              {btn.name}
-            </NavLink>
-          </li>
-        )
-      })}
-    </ul>
+    <div className="lg:border-r-[2px] lg:border-[#ffc515] flex">
+      <ul className={openNavBtns}>
+        {navbarBtns.map(btn => {
+          return (
+            <li
+              key={btn.name}
+              className='border-b-2 md:border-none py-3 px-7 bg-slate-500 md:bg-black'
+            >
+              <NavLink to={btn.path} className={handleActiveLink}>
+                {btn.name}
+              </NavLink>
+            </li>
+          )
+        })}
+      </ul>
+    </div>
   )
 }
 
