@@ -9,7 +9,7 @@ const Navbar = () => {
   const handleNavBtns = () => setNavBtns(prev => !prev)
 
   return (
-    <div className='flex justify-between bg-black relative border-b-3 border-[#ffc515]'>
+    <div className='flex md:justify-between bg-black relative border-b-3 border-[#ffc515]'>
       <Logo />
       <Burger handleNavBtns={handleNavBtns} />
       <Buttons navBtns={navBtns} />
