@@ -1,4 +1,5 @@
 import React from 'react'
+import ComponentLayout from '../../shared/ComponentLayout'
 import lamb from '../../../assets/lamb-100.png'
 import details from './details'
 import signature from '../../../assets/signature.png'
@@ -8,17 +9,17 @@ import SectionLogo from '../../shared/SectionLogo'
 
 const Details = () => {
   return (
-    <div className='flex flex-col justify-center items-center'>
+    <>
       <SectionLogo image={lamb} />
-      <SectionTitle title={"Welcome"} />
+      <SectionTitle title={'Welcome'} />
       <ul className='mt-[100px] md:flex'>
         {details.map(detail => (
-          <DetailItem title={detail.title} description={detail.description} />
+          <DetailItem key={detail.title+detail.id} title={detail.title} description={detail.description} />
         ))}
       </ul>
-      <img src={signature} alt="signature" className="my-[60px] md:w-[150px]" />
-    </div>
+      <img src={signature} alt='signature' className='my-[60px] md:w-[150px]' />
+    </>
   )
 }
 
-export default Details
+export default ComponentLayout()(Details)
