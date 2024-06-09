@@ -27,7 +27,7 @@ export default {
       4: '4px',
       6: '6px',
       8: '8px'
-    },
+    }
     // spacing: {
     //   1: '1px',
     //   2: '2px',
@@ -51,5 +51,8 @@ export default {
     //   23: '23px',
     // }
   },
-  plugins: []
+  plugins: [
+    require('flowbite/plugin'),
+    './node_modules/flowbite-react/lib/esm/**/*.js'
+  ]
 }

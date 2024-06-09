@@ -9,11 +9,13 @@ const Navbar = () => {
   const handleNavBtns = () => setNavBtns(prev => !prev)
 
   return (
-    <div className='flex md:justify-between bg-black relative border-b-3 border-[#ffc515]'>
-      <Logo />
-      <Burger handleNavBtns={handleNavBtns} />
-      <Buttons navBtns={navBtns} />
-      <Reservation />
+    <div className="absolute left-0 right-0">
+      <div className='flex md:justify-between relative border-b-[1px] border-white z-20'>
+        <Logo />
+        <Burger handleNavBtns={handleNavBtns} />
+        <Buttons navBtns={navBtns} />
+        <Reservation />
+      </div>
     </div>
   )
 }
