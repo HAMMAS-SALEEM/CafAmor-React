@@ -1,6 +1,6 @@
 import React from 'react'
 
-const DetailItem = ({ title, description }) => {
+const SectionItem = ({ title, description }) => {
   return (
     <li className='mb-[30px]'>
       <h3 className='text-center text-[#1b1a1a] font-bold text-[30px]'>
@@ -13,4 +13,4 @@ const DetailItem = ({ title, description }) => {
   )
 }
 
-export default DetailItem
+export default SectionItem

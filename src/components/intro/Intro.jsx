@@ -1,6 +1,6 @@
 import React from 'react'
 import Hero from './hero/Hero'
-import Details from './details/Details'
+import Details from './detail/Details'
 
 const Intro = () => {
   return (
