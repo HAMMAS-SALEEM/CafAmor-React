@@ -5,6 +5,7 @@ import SectionLogo from '../shared/SectionLogo'
 import serviceLogo from '../../assets/foodtray.png'
 import detail from './detail/detail'
 import SectionItem from '../shared/SectionItem'
+import SectionItemLogo from '../shared/SectionItemLogo'
 
 const Services = () => {
   return (
@@ -14,9 +15,7 @@ const Services = () => {
       <ul className='mt-[100px] md:grid md:grid-cols-2 md:px-[50px] lg:grid-cols-4'>
         {detail.map(detail => (
           <li key={detail.title + detail.id}>
-            <div className="text-center flex justify-center">
-              <img src={detail.image} alt={detail.image} className="w-[50px]" />
-            </div>
+            <SectionItemLogo image={detail.image} />
             <ul>
               <SectionItem
                 title={detail.title}
