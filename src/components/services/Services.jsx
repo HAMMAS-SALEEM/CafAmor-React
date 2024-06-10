@@ -14,7 +14,7 @@ const Services = () => {
     <>
       <SectionLogo image={serviceLogo} />
       <SectionTitle title={'Our Services'} />
-      <ul className='mt-[100px] md:grid md:grid-cols-2 md:px-[50px] lg:grid-cols-4'>
+      <ul className='my-[100px] md:grid md:grid-cols-2 md:px-[50px] lg:grid-cols-4'>
         {detail.map(detail => (
           <li key={detail.title + detail.id}>
             <SectionItemLogo image={detail.image} />
