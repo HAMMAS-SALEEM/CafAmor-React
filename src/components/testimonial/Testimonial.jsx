@@ -2,10 +2,10 @@ import React from 'react'
 import SectionLogo from '../shared/SectionLogo'
 import SectionTitle from '../shared/SectionTitle'
 import iceCream from '../../assets/ice-cream-white.png'
-import OverlayComponent from '../shared/OverlayComponent'
 import quotes from './quotes/quotes'
 
 import bg from '../../assets/testimonial.png'
+import ComponentLayout from '../shared/ComponentLayout'
 
 const Testimonial = () => {
   return (
@@ -23,4 +23,4 @@ const Testimonial = () => {
   )
 }
 
-export default OverlayComponent({bg})(Testimonial)
+export default ComponentLayout({bg})(Testimonial)

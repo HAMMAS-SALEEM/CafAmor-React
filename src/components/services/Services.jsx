@@ -7,6 +7,8 @@ import detail from './detail/detail'
 import SectionItem from '../shared/SectionItem'
 import SectionItemLogo from '../shared/SectionItemLogo'
 
+const bg = ''
+
 const Services = () => {
   return (
     <>
@@ -29,4 +31,4 @@ const Services = () => {
   )
 }
 
-export default ComponentLayout()(Services)
+export default ComponentLayout({bg})(Services)

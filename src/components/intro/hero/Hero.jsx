@@ -1,7 +1,6 @@
 import React from 'react'
-import OverlayComponent from '../../shared/OverlayComponent'
-
 import bg from '../../../assets/home.jpg'
+import ComponentLayout from '../../shared/ComponentLayout'
 
 const Hero = () => {
   return (
@@ -16,4 +15,4 @@ const Hero = () => {
   )
 }
 
-export default OverlayComponent({bg})(Hero)
+export default ComponentLayout({bg})(Hero)

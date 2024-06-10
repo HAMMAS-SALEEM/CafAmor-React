@@ -7,6 +7,8 @@ import SectionItem from '../../shared/SectionItem'
 import SectionTitle from '../../shared/SectionTitle'
 import SectionLogo from '../../shared/SectionLogo'
 
+const bg = ''
+
 const Details = () => {
   return (
     <>
@@ -22,4 +24,4 @@ const Details = () => {
   )
 }
 
-export default ComponentLayout()(Details)
+export default ComponentLayout({bg})(Details)
