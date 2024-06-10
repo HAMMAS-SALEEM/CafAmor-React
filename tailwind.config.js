@@ -3,6 +3,9 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      colors: {
+        goldBtn: 'rgb(255,197,21)'
+      }
     },
     screens: {
       sm: '0',
