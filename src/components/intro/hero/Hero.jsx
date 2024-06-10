@@ -1,7 +1,7 @@
 import React from 'react'
 import OverlayComponent from '../../shared/OverlayComponent'
 
-const bg = './assets/home.jpg'
+import bg from '../../../assets/home.jpg'
 
 const Hero = () => {
   return (

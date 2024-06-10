@@ -5,7 +5,7 @@ import iceCream from '../../assets/ice-cream-white.png'
 import OverlayComponent from '../shared/OverlayComponent'
 import quotes from './quotes/quotes'
 
-const bg = './assets/testimonial.png'
+import bg from '../../assets/testimonial.png'
 
 const Testimonial = () => {
   return (
