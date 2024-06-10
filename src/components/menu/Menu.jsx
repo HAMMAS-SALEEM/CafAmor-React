@@ -5,6 +5,8 @@ import bg from '../../assets/menu-bg.jpg'
 import SectionTitle from '../shared/SectionTitle'
 import ComponentLayout from '../shared/ComponentLayout'
 import detail, { buttons } from './detail/detail'
+import MenuButton from './button/MenuButton'
+import MenuItem from './menuItem/MenuItem'
 
 const Menu = () => {
   const [mealType, setMealType] = useState('Breakfast')
@@ -18,15 +20,11 @@ const Menu = () => {
       <ul className='flex z-10 gap-8 my-[50px]'>
         {buttons.map(btn => (
           <li key={btn.name}>
-            <button
-              type='button'
-              className={`text-white font-bold text-lg ${
-                btn.name === mealType ? 'text-goldBtn' : 'text-white'
-              } hover:text-goldBtn transition-all duration-300`}
-              onClick={handleMealType}
-            >
-              {btn.name}
-            </button>
+            <MenuButton
+              name={btn.name}
+              mealType={mealType}
+              handleMealType={handleMealType}
+            />
           </li>
         ))}
       </ul>
@@ -40,14 +38,7 @@ const Menu = () => {
           })
           .map(meal => {
             return (
-              <li key={meal.title} className='flex'>
-                <h3 className='text-[20px] font-bold mt-[10px] text-white'>
-                  {meal.title}
-                </h3>
-                <h3 className='text-[20px] font-bold mt-[10px] text-white'>
-                  {meal.price}
-                </h3>
-              </li>
+              <MenuItem meal={meal} key={meal.title} />
             )
           })}
       </ul>
