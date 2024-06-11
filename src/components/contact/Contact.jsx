@@ -4,6 +4,7 @@ import smallBg from '../../assets/contact-bg.png'
 import contactLogo from '../../assets/contact-logo2.png'
 import SectionLogo from '../shared/SectionLogo'
 import SectionTitle from '../shared/SectionTitle'
+import Copyright from './copyright/Copyright'
 import Form from './form/Form'
 
 const bg = ''
@@ -14,6 +15,7 @@ const Contact = () => {
       <SectionLogo image={contactLogo} />
       <SectionTitle title={'Contact Us'} />
       <Form />
+      <Copyright />
     </>
   )
 }
