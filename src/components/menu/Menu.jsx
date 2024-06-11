@@ -7,11 +7,16 @@ import ComponentLayout from '../shared/ComponentLayout'
 import detail, { buttons } from './detail/detail'
 import MenuButton from './button/MenuButton'
 import MenuItem from './menuItem/MenuItem'
+import GoldenButton from '../shared/GoldenButton'
 
 const Menu = () => {
   const [mealType, setMealType] = useState('Breakfast')
 
   const handleMealType = e => setMealType(e.target.innerHTML)
+
+  const handleButton = () => {
+    console.log('See More')
+  }
 
   return (
     <div className='flex flex-col justify-center items-center z-10'>
@@ -37,11 +42,12 @@ const Menu = () => {
             return ''
           })
           .map(meal => {
-            return (
-              <MenuItem meal={meal} key={meal.title} />
-            )
+            return <MenuItem meal={meal} key={meal.title} />
           })}
       </ul>
+      <div className='my-[80px] z-10'>
+        <GoldenButton title={'See More'} handleButton={handleButton} />
+      </div>
     </div>
   )
 }
