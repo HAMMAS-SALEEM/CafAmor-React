@@ -28,7 +28,7 @@ const Menu = () => {
           </li>
         ))}
       </ul>
-      <ul className='z-10'>
+      <ul className='grid md:grid-cols-2 gap-x-[60px] z-10'>
         {detail
           .filter(meal => {
             if (meal.mealType === mealType) {
