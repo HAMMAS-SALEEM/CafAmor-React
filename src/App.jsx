@@ -1,10 +1,11 @@
 import { publicRoutes } from './config/routes.config/index'
 import { Route, Routes } from 'react-router-dom'
 import { Suspense } from 'react'
+import Loader from './components/shared/Loader'
 
 const App = () => {
   return (
-    <Suspense fallback={<p>Loading...</p>}>
+    <Suspense fallback={<Loader />}>
       <Routes>
         {publicRoutes.map(route => (
           <Route
