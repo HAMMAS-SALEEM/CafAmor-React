@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        goldBtn: 'rgb(255,197,21)'
+        goldBtn: 'rgb(255,197,21)',
+        blueInp: 'rgb(239,244,246)'
       }
     },
     screens: {
