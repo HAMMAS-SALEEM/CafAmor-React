@@ -1,11 +1,11 @@
 import React from 'react'
 import AppLayout from '../layout/AppLayout'
-import Intro from '../components/intro/Intro'
+import AboutDetails from '../components/about/AboutDetails'
 
 const About = () => {
   return (
     <>
-      <Intro />
+      <AboutDetails />
     </>
   )
 }
