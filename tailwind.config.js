@@ -1,6 +1,15 @@
+const flowbite = require("flowbite-react/tailwind");
+const withMT = require('@material-tailwind/react/utils/withMT')
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+
+export default withMT({
+  content: [
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}',
+    'path-to-your-node_modules/@material-tailwind/react/components/**/*.{js,ts,jsx,tsx}',
+    'path-to-your-node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}',
+    flowbite.plugin(),
+  ],
   theme: {
     extend: {
       colors: {
@@ -14,19 +23,10 @@ export default {
       lg: '1090px',
       xl: '1280px',
       '2xl': '1536px'
-    },
-    // borderWidth: {
-    //   DEFAULT: '1px',
-    //   0: '0',
-    //   2: '2px',
-    //   3: '3px',
-    //   4: '4px',
-    //   6: '6px',
-    //   8: '8px'
-    // }
+    }
   },
   plugins: [
-    require('flowbite/plugin'),
-    './node_modules/flowbite-react/lib/esm/**/*.js'
+    flowbite.plugin(),
+    // './node_modules/flowbite-react/lib/esm/**/*.js'
   ]
-}
+})
