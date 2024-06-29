@@ -3,5 +3,5 @@ export default [
   { name: 'About', path: '/about' },
   { name: 'Restaurant', path: '/restaurant' },
   { name: 'News', path: '/news' },
-  { name: 'Contact', path: '/contact' }
+  { name: 'Contacts', path: '/contacts' }
 ]
