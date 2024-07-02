@@ -1,8 +1,8 @@
 import React from 'react'
 
-const SectionItem = ({ title, description }) => {
+const SectionItem = ({ title = '', description = '' }) => {
   return (
-    <li className='mb-[30px]'>
+    <li className='mb-[30px] z-30'>
       <h3 className='text-center text-[#1b1a1a] font-bold text-[30px]'>
         {title}
       </h3>

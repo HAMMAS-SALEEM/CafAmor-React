@@ -1,6 +1,6 @@
 import React from 'react'
 
-const HeroDetails = ({big="", small=""}) => {
+const HeroDetails = ({ big = '', small = '' }) => {
   return (
     <div className='flex justify-center items-center h-screen'>
       <h1 className='text-center m-auto text-5xl md:text-7xl lg:text-9xl z-10'>

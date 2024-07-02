@@ -1,14 +1,16 @@
 import React from 'react'
-import HeroDetails from '../shared/HeroDetails'
-import ComponentLayout from '../shared/ComponentLayout'
-import bg from '../../assets/about-bg.jpg'
+import Details from './details/Details'
+import Hero from './hero/Hero'
+import ChefContainer from './chefs/ChefContainer'
 
 const AboutDetails = () => {
   return (
-    <div>
-      <HeroDetails big={'About us'} />
-    </div>
+    <>
+      <Hero />
+      <Details />
+      <ChefContainer />
+    </>
   )
 }
 
-export default ComponentLayout({ bg })(AboutDetails)
+export default AboutDetails
