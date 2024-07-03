@@ -9,7 +9,7 @@ import SectionLogo from '../../shared/SectionLogo'
 const bg = ''
 
 const Details = () => {
-  const title = "About us"
+  const title = 'About us'
   return (
     <>
       <SectionLogo image={lamb} />
@@ -17,7 +17,7 @@ const Details = () => {
       <ul className='mt-[100px] md:flex md:px-[50px]'>
         {detail.map(detail => (
           <SectionItem
-            key={detail.title + detail.id}
+            key={detail.description}
             description={detail.description}
           />
         ))}
