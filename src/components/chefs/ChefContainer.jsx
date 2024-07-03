@@ -9,14 +9,14 @@ import { chefs } from './detail'
 
 const ChefContainer = () => {
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className='flex flex-col justify-center items-center'>
       <SectionLogo image={logo} />
-      <SectionTitle title={"Our Chefs"} />
-      {
-        chefs.map(chef => (
+      <SectionTitle title={'Our Chefs'} />
+      <ul className="flex flex-wrap justify-center items-center gap-5 mb-[100px] z-30">
+        {chefs.map(chef => (
           <Chef key={chef.name} chef={chef} />
-        ))
-      }
+        ))}
+      </ul>
     </div>
   )
 }
